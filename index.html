@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biglietto Treno</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div class="main-container">
+        <div class=title><h2>Calcola il prezzo del tuo Biglietto</h2></div>
+        <div class="form">
+            <div class='input'>
+                <div class='title-input'>
+                    <h4>Nome Cognome</h4>
+                </div>
+                <p>
+                    <input  type="text" id='nameField'>
+                </p>
+            </div>
+            <div class='input'>
+                <div class='title-input'>
+                    <h4>NKm da percorrere</h4>
+                </div>
+                <p>
+                    <input  type="number" id='kmField' >
+                <p>
+            </div>
+            <div class='input'>
+                <div class='title-input'>
+                    <h4>Fascia d'eta</h4>
+                </div>
+                <div class="custom-select">
+                    <select id='price'>
+                        <option value="0">Minorenne <i class="fas fa-chevron-down"></i>
+                        </option>
+                        <option value="1">Maggiorenne</option>
+                        <option value="2">Over 65</option>
+                    </select>
+                  </div>
+            </div>
+        </div>
+        <div class='buttons'>
+            <button class="button" id='genera'>Genera</button>
+            <button class="button">Annulla</button>
+        </div>
+
+
+
+        <div class="title">
+             <h2>IL TUO BIGLIETTO</h2>
+        </div>
+        <div class='ticket-container'>
+            <div class='details'>
+                <h4>Dettagli passeggeri</h4>
+            </div>
+           <div class='small-container clearfix'>
+            <div class='ticket'>
+                <div class="passeggero">
+                    <h3>Nome passeggero</h3>
+                    <p class='passeggeroJs' id='passegJS'></p>
+                </div>
+                <div class="offerta passeggero">
+                    <h3>Offerta</h3>
+                    <p class='passeggeroJs' id='OffertaJS'></p>
+                </div>
+                <div class="offerta passeggero">
+                    <h3>Carrozza</h3>
+                    <p class='passeggeroJs' id='carozzaJS'></p>
+                </div>
+                <div class="offerta passeggero">
+                    <h3>Codice CP</h3>
+                    <p class='passeggeroJs' id='codiceJS'></p>
+                </div>
+                <div class="offerta passeggero">
+                    <h3>Costo Biglietto</h3>
+                    <p class='passeggeroJs' id='costoTicketJS'></p>
+                </div>
+            </div>
+           </div>
+        </div>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+</html>
