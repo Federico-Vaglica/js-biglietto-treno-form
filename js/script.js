@@ -3,13 +3,15 @@
 
 var button = document.getElementById('genera');
 
-
 button.addEventListener('click',function(){
     var name = document.getElementById('nameField').value
     var km = document.getElementById('kmField').value;
     var price = document.getElementById('passengerAge').value; 
     document.getElementById('passegJS').innerHTML = name;
     calcoloPrezzo(km,price); 
+    document.getElementById('tickContainer').classList.add('ticket-container');
+
+
     offerta(price);
     document.getElementById('carrozzaJS').innerHTML = numeroCarrozza();
     document.getElementById('codiceCP').innerHTML = randomNumber(900000,1000000);
