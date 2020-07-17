@@ -2,6 +2,7 @@
 //var kmField = document.getElementById('nameField').value;
 
 var button = document.getElementById('genera');
+var button1 = document.getElementById('annulla')
 
 button.addEventListener('click',function(){
     var name = document.getElementById('nameField').value
@@ -15,10 +16,12 @@ button.addEventListener('click',function(){
     offerta(price);
     document.getElementById('carrozzaJS').innerHTML = numeroCarrozza();
     document.getElementById('codiceCP').innerHTML = randomNumber(900000,1000000);
-    reset();
 });
 
-
+button1.addEventListener('click',function(){
+    reset();
+    document.getElementById('tickContainer').classList.remove('ticket-container');
+})
 
 
 
