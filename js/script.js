@@ -15,6 +15,7 @@ button.addEventListener('click',function(){
     offerta(price);
     document.getElementById('carrozzaJS').innerHTML = numeroCarrozza();
     document.getElementById('codiceCP').innerHTML = randomNumber(900000,1000000);
+    reset();
 });
 
 
@@ -72,3 +73,7 @@ function calcoloPrezzo(km,passengerAge) {
     function randomNumber(max,min) {
         return Math.floor(Math.random() * (max - min) + min);
     }
+
+    function reset() {
+        document.getElementById("form").reset();
+      }

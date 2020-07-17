@@ -18,7 +18,7 @@ body {
 .main-container {
     width: 100%;
     height: 700px;
-    background-color: tomato;
+    background-color: lightskyblue;
 }
 
 /*Style title*/
@@ -39,7 +39,7 @@ body {
 /*Inizio style primo form*/
 
 
-.form {
+form {
     width: 60%;
     margin: 0 auto;
     background-color: whitesmoke;
@@ -88,7 +88,8 @@ body {
     background-color: whitesmoke;
     opacity: 1;
     border-radius: 8px;
-    box-shadow: 5px 5px;;
+    box-shadow: 5px 5px;
+    transition: 0,4s;
 }
 
 .small-container {
