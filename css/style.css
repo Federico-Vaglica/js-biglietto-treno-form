@@ -73,6 +73,10 @@ form {
     border-radius: 5px;
 }
 
+.button:hover {
+    background-color: royalblue;
+}
+
 
 
 
